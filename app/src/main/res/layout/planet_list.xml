@@ -15,7 +15,7 @@
     android:layout_marginEnd="15dp"
     app:cardCornerRadius="20dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:background="@color/black"
@@ -34,7 +34,7 @@
             android:id="@+id/planetImage"
             android:elevation="30dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/alderaan"
+            android:imageUrl="@{isPlanets.planetImage}"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
 
@@ -49,7 +49,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:text="Planet Name"
+                android:text="@{isPlanets.planetName}"
                 android:textColor="@color/white"
                 android:textSize="19sp"
                 android:textStyle="bold"
@@ -61,7 +61,7 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:text="Planet Type"
+                android:text="@{isPlanets.planetType}"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="15sp"
                 android:textStyle="bold"
