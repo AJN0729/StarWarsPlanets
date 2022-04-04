@@ -13,7 +13,7 @@
 
     <LinearLayout
             android:orientation="vertical"
-            android:background="@color/black"
+            android:background="@drawable/space"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".view.NewActivity">
@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/planetImage"
+                        android:id="@+id/planetImageDetail"
                         android:scaleType="fitXY"
                         android:layout_marginBottom="15dp"
                         android:src="@drawable/alderaan"
